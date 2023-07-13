@@ -347,7 +347,7 @@ elif selected=="Application":
         st.dataframe(recommend_product_df, use_container_width=True)
     
     else:
-        st.markdown("#### Category")
+        st.markdown("#### Product Category")
         category = st.selectbox("Category:",set(sorted(df['main_category'].to_list())), label_visibility='collapsed')
 
         st.markdown("#### Product Name")
