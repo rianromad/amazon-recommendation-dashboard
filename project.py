@@ -351,7 +351,7 @@ elif selected=="Application":
         category = st.selectbox("Category:",set(sorted(df['main_category'].to_list())), label_visibility='collapsed')
         
         st.markdown("#### Product Name")
-        product = st.selectbox("Product:",set(sorted(df[(df['main_category']==category) & (df['sub_category']==sub_category)]['product_name'].to_list())),label_visibility='collapsed')
+        product = st.selectbox("Product:",set(sorted(df[(df['main_category']==category)]['product_name'].to_list())),label_visibility='collapsed')
 
         st.markdown("#### Product Recommendation")
 
