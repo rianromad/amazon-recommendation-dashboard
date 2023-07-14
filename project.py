@@ -298,7 +298,7 @@ elif selected=="Application":
 
     with st.container():
         st.write('Recommendation Method:')
-        method = st.radio('Recommendation Method:',['Collaborative Filtering', 'Content-Based Filtering'],horizontal=True, label_visibility='collapsed')
+        method = st.radio('Recommendation Method:',['Collaborative Filtering', 'Item-Based Filtering'],horizontal=True, label_visibility='collapsed')
     
     if method == "Collaborative Filtering":
         col1, col2 = st.columns([1,4])
